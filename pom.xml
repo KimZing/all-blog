@@ -7,7 +7,7 @@
     <groupId>com.kimzing</groupId>
     <artifactId>all-blog</artifactId>
     <version>1.0.0-RELEASE</version>
-    <name>all-blog</name>
+    <name>kimzing-blog</name>
     <description>SpringBoot for All</description>
 
     <modules>
