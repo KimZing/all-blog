@@ -1,3 +1,3 @@
 # kimzing-blog
 
-http://blog.kimzing.com
+网址：http://blog.kimzing.com
