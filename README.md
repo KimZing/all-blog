@@ -1,2 +1,3 @@
 # kimzing-blog
-KimZing  Blog
+
+http://blog.kimzing.com
