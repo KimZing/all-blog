@@ -1,0 +1,236 @@
+# Version of the Icarus theme that is currently used
+version: 2.6.0
+# Path or URL to the website's icon
+#favicon: /images/favicon.svg
+favicon: /images/favicon.ico
+# Additional HTML meta tags in an array.
+meta: 
+# canonical_url of your site
+canonical_url: 
+# Path or URL to RSS atom.xml
+rss: 
+# Path or URL to the website's logo to be shown on the left of the navigation bar or footer
+logo: /images/logo.ico
+# Open Graph metadata
+# https://hexo.io/docs/helpers.html#open-graph
+open_graph:
+    # Facebook App ID
+    fb_app_id: 
+    # Facebook Admin ID
+    fb_admins: 
+    # Twitter ID
+    twitter_id: 
+    # Twitter site
+    twitter_site: 
+    # Google+ profile link
+    google_plus: 
+# Navigation bar link settings
+navbar:
+    # Navigation bar menu links
+    menu:
+        主页: /
+        归档: /archives
+        分类: /categories
+        标签: /tags
+        GitHub: github
+        CSDN: https://blog.csdn.net/KingBoyWorld
+        工具: tools
+        关于: about
+    # Navigation bar links to be shown on the right
+    links:
+        View GitHub:
+            icon: fab fa-github
+            url: 'https://github.com/KimZing'
+# Footer section link settings
+footer:
+    # Links to be shown on the right of the footer section
+    links:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution 4.0 International:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+# Article display settings
+article:
+    # Code highlight settings
+    highlight:
+        # Code highlight themes
+        # https://github.com/highlightjs/highlight.js/tree/master/src/styles
+        theme: monokai
+        # Show code copying button
+        clipboard: true
+        # Default folding status of the code blocks. Can be "", "folded", "unfolded"
+        fold: unfolded
+    # Whether to show article thumbnail images
+    thumbnail: true
+    # Whether to show estimate article reading time
+    readtime: true
+# Search plugin settings
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search
+search:
+    # Name of the search plugin
+    type: baidu
+# Comment plugin settings
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment
+comment:
+    # Name of the comment plugin
+    type: gitalk
+    owner: KimZing         # (required) GitHub user name
+    repo: blog-comment          # (required) GitHub repository name
+    client_id: 6e18b1eee5ba5a217056     # (required) OAuth application client id
+    client_secret: 5306a467ef1504db280f998daeec97db6be72652 # (required) OAuth application client secret
+    admin: KimZing         # (required) GitHub repo owner and collaborators who can initialize github issues
+# Donation entries
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
+donate:
+    -
+        # Donation entry name
+        type: alipay
+        # Qrcode image URL
+        qrcode: 'http://images.kimzing.com/blog/other/alipay-197x197.png'
+    -
+        # Donation entry name
+        type: wechat
+        # Qrcode image URL
+        qrcode: 'http://images.kimzing.com/blog/other/wechatpay-197x197.png'
+# Share plugin settings
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share
+share:
+    # Share plugin name
+    type: sharejs
+# Sidebar settings.
+# Please be noted that a sidebar is only visible when it has at least one widget
+sidebar:
+    # left sidebar settings
+    left:
+        # Whether the left sidebar is sticky when page scrolls
+        # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/make-a-sidebar-sticky-when-page-scrolls/
+        sticky: true
+    # right sidebar settings
+    right:
+        # Whether the right sidebar is sticky when page scrolls
+        # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/make-a-sidebar-sticky-when-page-scrolls/
+        sticky: true
+# Sidebar widget settings
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
+widgets:
+    -
+        # Widget name
+        type: profile
+        # Where should the widget be placed, left or right
+        position: left
+        # Author name to be shown in the profile widget
+        author: KimZing
+        # Title of the author to be shown in the profile widget
+        author_title: Developer
+        # Author's current location to be shown in the profile widget
+        location: NanJing
+        # Path or URL to the avatar to be shown in the profile widget
+        avatar: /images/avatar.jpeg
+        # Email address for the Gravatar to be shown in the profile widget
+        gravatar:
+        # Whether to show avatar image rounded or square
+        avatar_rounded: false
+        # Path or URL for the follow button
+        follow_link: 'https://github.com/KimZing'
+        # Links to be shown on the bottom of the profile widget
+        social_links:
+            WeChat:
+                icon: fab fa-weixin
+                url: /images/wechat.jpeg
+            Github:
+                icon: fab fa-github
+                url: 'https://github.com/KimZing'
+            Mail:
+                icon: fa fa-envelope
+                url: mailto:kimzing@163.com
+        about_author: 从事技术研究，架构选型工作，喜欢折腾各种技术，主语言Java，却喜欢的Go的精妙，对前端、后端、测试、运维均有所涉猎。Coding is a way of thinking！
+    -
+        # Widget name
+        type: notice
+        # Where should the widget be placed, left or right
+        position: right
+        content: 之前的博客一直在CSDN进行发布，之后将会逐步迁移到个人博客，并进行统一整理分类。
+    -
+        # Widget name
+        type: toc
+        # Where should the widget be placed, left or right
+        position: left
+    -
+        # Widget name
+        type: links
+        # Where should the widget be placed, left or right
+        position: left
+        # Links to be shown in the links widget
+        links:
+            CSDN: 'https://blog.csdn.net/KingBoyWorld'
+    -
+        # Widget name
+        type: tagcloud
+        # Where should the widget be placed, left or right
+        position: left
+    -
+        # Widget name
+        type: recent_posts
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # Widget name
+        type: archive
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # Widget name
+        type: category
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # Widget name
+        type: tag
+        # Where should the widget be placed, left or right
+        position: right
+# Other plugin settings
+plugins:
+    # Enable page animations
+    animejs: true
+    # Enable the lightGallery and Justified Gallery plugins
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/gallery-plugin/
+    gallery: true
+    # Enable the Outdated Browser plugin
+    # http://outdatedbrowser.com/
+    outdated-browser: true
+    # Enable the MathJax plugin
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/mathjax-plugin/
+    mathjax: true
+    # Show the back to top button on mobile devices
+    back-to-top: true
+    # Google Analytics plugin settings
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
+    google-analytics:
+        # Google Analytics tracking id
+        tracking_id: 
+    # Baidu Analytics plugin settings
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
+    baidu-analytics:
+        # Baidu Analytics tracking id
+        tracking_id: 
+    # Hotjar user feedback plugin
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Hotjar
+    hotjar:
+        # Hotjar site id
+        site_id: 
+    # Show a loading progress bar at top of the page
+    progressbar: true
+    # BuSuanZi site/page view counter
+    # https://busuanzi.ibruce.info
+    busuanzi: true
+# CDN provider settings
+# https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
+providers:
+    # Name or URL of the JavaScript and/or stylesheet CDN provider
+    cdn: jsdelivr
+    # Name or URL of the webfont CDN provider
+    fontcdn: google
+    # Name or URL of the webfont Icon CDN provider
+    iconcdn: fontawesome

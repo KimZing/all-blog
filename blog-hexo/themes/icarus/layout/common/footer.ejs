@@ -1,0 +1,52 @@
+<footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="<%- url_for('/') %>">
+                <!--注释掉logo-->
+<!--                 <% if (logo && logo.text) { %> -->
+<!--                     <%= logo.text %> -->
+<!--                 <% } else { %> -->
+<!--                     <img src="<%- url_for(logo) %>" alt="<%= title %>" height="28"> -->
+<!--                 <% } %> -->
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 <%= author || title %>&nbsp;
+
+
+<!--                 Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a -->
+<!--                         href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a> -->
+
+                <span>  ICP证:<a href="http://www.beian.miit.gov.cn">苏ICP备18049304  </a></span>
+
+                <% if (busuanzi) { %>
+                <span id="busuanzi_container_site_uv" style="margin-left:5px">
+                    浏览用户: <span id="busuanzi_value_site_uv">0</span>
+                </span>
+                <span id="busuanzi_container_site_pv" style="margin-left:5px">
+                     访问量: <span id="busuanzi_value_site_pv">0</span>
+                </span>
+                <% } %>
+                </p>
+            </div>
+            <div class="level-end">
+            <% if (Object.keys(links).length) { %>
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                <% for (let name in links) {
+                        let link = links[name]; %>
+                <p class="control">
+                    <a class="button is-white <%= typeof(link) !== 'string' ? 'is-large' : '' %>" target="_blank" rel="noopener" title="<%= name %>" href="<%= url_for(typeof(link) === 'string' ? link : link.url) %>">
+                        <% if (typeof(link) === 'string') { %>
+                        <%= name %>
+                        <% } else { %>
+                        <i class="<%= link.icon %>"></i>
+                        <% } %>
+                    </a>
+                </p>
+                <% } %>
+                </div>
+            <% } %>
+            </div>
+        </div>
+    </div>
+</footer>

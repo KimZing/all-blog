@@ -1,0 +1,25 @@
+server:
+  port: 7000
+
+spring:
+  application:
+    name: blog-hook
+  mail:
+    host: smtp.163.com
+    username: kimnotice@163.com
+    password: Kim123456
+    default-encoding: utf-8
+    port: 465
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+
+command:
+  hexo:
+    - "cd /kimzing/all-blog"
+    - "git pull origin master"
+    - "cd /kimzing/all-blog/blog-hexo"
+    - "hexo g"
