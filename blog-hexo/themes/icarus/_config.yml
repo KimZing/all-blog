@@ -77,7 +77,7 @@ comment:
     # Name of the comment plugin
     type: gitalk
     owner: KimZing         # (required) GitHub user name
-    repo: blog-comment          # (required) GitHub repository name
+    repo: all-blog          # (required) GitHub repository name
     client_id: 6e18b1eee5ba5a217056     # (required) OAuth application client id
     client_secret: 5306a467ef1504db280f998daeec97db6be72652 # (required) OAuth application client secret
     admin: KimZing         # (required) GitHub repo owner and collaborators who can initialize github issues
