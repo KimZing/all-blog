@@ -19,7 +19,7 @@ spring:
 
 command:
   hexo:
-    - "cd /kimzing/kimzing-blog"
+    - "cd /data/kimzing-blog"
     - "git pull origin master"
-    - "cd /kimzing/kimzing-blog/blog-hexo"
+    - "cd /data/kimzing-blog/blog-hexo"
     - "hexo g"

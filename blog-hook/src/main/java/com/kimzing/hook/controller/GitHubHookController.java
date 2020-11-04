@@ -27,7 +27,6 @@ public class GitHubHookController {
 
     @PostMapping
     public void hookByGitHub(@RequestBody GitHubHookDTO gitHubHookDTO) {
-        ObjectMapper mapper = new ObjectMapper();
         log.info("github hook info: [{}]", gitHubHookDTO);
         gitHubService.hook(gitHubHookDTO);
     }
