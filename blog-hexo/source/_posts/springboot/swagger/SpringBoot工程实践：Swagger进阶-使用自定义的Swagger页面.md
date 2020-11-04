@@ -259,7 +259,7 @@ public class UserDTO {
 页面效果示例
 
 ![示例](
-http://images.kimzing.com/blog/swagger.png?x-oss-process=style/KimZing)
+http://oss.kimzing.com/blog/swagger.png?x-oss-process=style/KimZing)
 
 ## 四、扩展功能之认证与生产环境配置
 
@@ -305,7 +305,7 @@ knife4j:
 
 随后在页面中勾选`文档管理->个性化设置->启用Knife4j提供的增强功能`，刷新页面即可看到，如下示例
 
-![](http://images.kimzing.com/blog/swagger-md.png?x-oss-process=style/KimZing)
+![](http://oss.kimzing.com/blog/swagger-md.png?x-oss-process=style/KimZing)
 
 
 

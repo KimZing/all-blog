@@ -31,7 +31,7 @@ toc: true
 - 元数据是添加到程序元素如方法、字段、类和包上的额外信息，注解就是一种载体形式
 - 注解不能直接干扰程序代码的运行
 
-<img src="http://images.kimzing.com/blog/元数据.png" style="align:left;height:400px">
+<img src="http://oss.kimzing.com/blog/元数据.png" style="align:left;height:400px">
 
 ## 三、为什么要使用注解？
 
@@ -96,9 +96,9 @@ public @interface Retention {
 
 示例：当RentionPolicy取值为SOURCE时，Class文件中不会保留注解信息，而取值为CLASS时，Class反编译文件中则保留了注解的信息
 
-![](http://images.kimzing.com/blog/RetentionSource.png)
+![](http://oss.kimzing.com/blog/RetentionSource.png)
 
-![](http://images.kimzing.com/blog/RetentionClass.png)
+![](http://oss.kimzing.com/blog/RetentionClass.png)
 
 > 各个生命周期的用途： 
 
@@ -162,7 +162,7 @@ public class AnnotationTest {
 
 是否可以被标注类的子类继承。被@Inherited修饰的注解是具有继承性的，在自定义的注解标注到某个类时，该类的子类会继承这个自定义注解。这里需要注意的是**只有当子类继承父类的时候，注解才会被继承**，类实现接口，或者接口继承接口，都是无法获得父接口上的注解声明的。正确的示例如下(通过反射获取注解)
 
-![](http://images.kimzing.com/blog/20200403004522.png)
+![](http://oss.kimzing.com/blog/20200403004522.png)
 
 #### @Repeatable ★★
 
@@ -300,7 +300,7 @@ Annotation[] getDeclaredAnnotations();
 
 这就说明以上元素均可以通过反射获取该元素上标注的注解。
 
-![](http://images.kimzing.com/blog/AnnotatedElement.png)
+![](http://oss.kimzing.com/blog/AnnotatedElement.png)
 
 来一个完整的示例，show you the code
 
@@ -416,15 +416,15 @@ public class LearnAnnotationReflect {
 
 ​        在`System.out.println(learn.name());`打一个断点，以Debug模式运行，查看learn这个对象到底是什么
 
-![](http://images.kimzing.com/blog/debug-annotation.png)
+![](http://oss.kimzing.com/blog/debug-annotation.png)
 
 ​        从上面的截图可以看出，jdk为Learn生成了一个叫`$Proxy1`的代理对象，并且包含了一个内部成员`AnnotationIvocationHandler`，接下来就是调用`$Proxy1.name()`进行获取name的值，那么我们来看下`$Proxy1`到底是一个什么样的对象，在jdk8中可以添加JVM参数`-Dsun.misc.ProxyGenerator.saveGeneratedFiles`来保存代理类，更高版本可以使用`-Djdk.proxy.ProxyGenerator.saveGeneratedFiles=true`来保存代理类。在Idea中的设置方法如下
 
-![](http://images.kimzing.com/blog/proxy-save.png)
+![](http://oss.kimzing.com/blog/proxy-save.png)
 
 ​        重新运行程序，就会发现在项目根目录多了如下类，其中`$Proxy1`就是`Learn`注解对应的代理类
 
-![](http://images.kimzing.com/blog/20200405201332.png)        
+![](http://oss.kimzing.com/blog/20200405201332.png)        
 
 ​        当我们调用`Learn.name()`时，其实就是调用这个代理类的name方法，如下
 

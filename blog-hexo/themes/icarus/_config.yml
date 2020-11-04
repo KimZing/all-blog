@@ -88,12 +88,12 @@ donate:
         # Donation entry name
         type: alipay
         # Qrcode image URL
-        qrcode: 'http://images.kimzing.com/blog/other/alipay-197x197.png'
+        qrcode: 'http://oss.kimzing.com/blog/other/alipay-197x197.png'
     -
         # Donation entry name
         type: wechat
         # Qrcode image URL
-        qrcode: 'http://images.kimzing.com/blog/other/wechatpay-197x197.png'
+        qrcode: 'http://oss.kimzing.com/blog/other/wechatpay-197x197.png'
 # Share plugin settings
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share
 share:
